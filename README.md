@@ -90,3 +90,10 @@ sqlx migrate add create_subscriptions_table
 ```
 sqlx migrate run
 ```
+
+##### Remove unnecessary dependences
+```
+cargo install cargo-udeps
+
+cargo +nightly udeps --all-targets
+```
